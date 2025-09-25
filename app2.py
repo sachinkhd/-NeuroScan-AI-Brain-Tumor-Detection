@@ -269,7 +269,7 @@ def init_session_state():
 @st.cache_resource
 def load_brain_tumor_model():
     try:
-        model_path = r"C:\Users\ZIGMA LIVE\brain\model\model.keras"
+        model_path = "model.keras"
         model = load_model(model_path)
         return model, True
     except Exception as e:
@@ -1039,4 +1039,5 @@ def main():
 
 # Run the application
 if __name__ == "__main__":
+
     main()
